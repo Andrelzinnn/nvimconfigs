@@ -4,7 +4,7 @@ import subprocess
 def run_script(script_name):
     try:
         print(f"Iniciando a execução do script: {script_name}")
-        subprocess.run(["python", script_name], check=True)
+        subprocess.run(["python", f"scripts/{script_name}"], check=True)
         print(f"{script_name} executado com sucesso.")
     except subprocess.CalledProcessError as e:
         print(f"Erro ao executar o script {script_name}: {e}")
