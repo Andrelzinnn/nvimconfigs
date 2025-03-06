@@ -8,7 +8,7 @@ def run_script(script_name):
         print(f"{script_name} executado com sucesso.")
     except subprocess.CalledProcessError as e:
         print(f"Erro ao executar o script {script_name}: {e}")
-        raise
+    
 
 
 def main():
