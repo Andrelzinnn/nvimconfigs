@@ -8,7 +8,6 @@ def run_script(script_name):
         print(f"{script_name} executado com sucesso.")
     except subprocess.CalledProcessError as e:
         print(f"Erro ao executar o script {script_name}: {e}")
-        raise
 
 
 def main():
@@ -19,6 +18,10 @@ def main():
     print("Iniciando a instalação das dependências...")
     run_script("dependencies_install.py")
     print("Instalação das dependências concluída.")
+
+    print("movendo arquivos")
+    run_script("move_files.py")
+    print("processo finalizado")
 
 
 if __name__ == "__main__":
