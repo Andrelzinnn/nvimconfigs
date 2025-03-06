@@ -17,6 +17,6 @@ vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = " "
 
 --local opts = {}
-require("lazy").setup("plugins")
 require("options.settings")
+require("lazy").setup("plugins")
 --vim.cmd("colorscheme tokyonight-night")
